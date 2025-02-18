@@ -1,12 +1,10 @@
-from langchain.document_loaders import PyPDFLoader
-print("langchain installed successfully!")
-from langchain.text_splitter import CharacterTextSplitter
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_community.chat_models import AzureChatOpenAI
 from langchain.chains import RetrievalQA
-from langchain.llms import OpenAI
 import os
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 import json
 import pickle
 from pathlib import Path
@@ -19,7 +17,6 @@ import numpy as np
 import faiss
 from datetime import datetime
 from openai import AzureOpenAI
-from langchain.chat_models import AzureChatOpenAI
 
 class PDFReferenceProcessor:
     def __init__(self, pdf_path, openai_api_key):
