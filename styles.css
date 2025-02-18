@@ -1,0 +1,69 @@
+.upload-container {
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.list-group-item {
+    transition: background-color 0.2s;
+    padding: 15px;
+    margin-bottom: 8px;
+    border-radius: 6px !important;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.suggested-name {
+    background-color: #f8f9fa;
+}
+
+.input-group {
+    margin-top: 5px;
+    flex: 1;
+    min-width: 300px;
+}
+
+#apiKey {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.confidence-badge {
+    font-size: 0.8rem;
+    min-width: 35px;
+    text-align: center;
+}
+
+.input-group .input-group-text {
+    min-width: 80px;
+}
+
+.column-name {
+    font-weight: 500;
+    padding: 4px 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    margin-right: 8px;
+    word-break: break-word;
+}
+
+.mapping-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.source-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
